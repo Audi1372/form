@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1 id="title">form</h1>
+    <p id="description">feijrok</p>
+    <form id="form">
+        <div class="form-group">
+    
+        <input id="first-name" type="text" placeholder="firstname" required/>
+
+        <!-- <label for="first-name">Firstname:</label> -->
+
+        <!-- <label for="last-name">Lastname:</label> -->
+        <input  id="last-name"  type="text" placeholder="last name" required /><br>
+
+        <!-- <label for="address">Address:</label> -->
+        <textarea   rows="1" cols="50" id="address"  placeholder="address" ></textarea><br>
+
+        <!-- <label for="pincode">Pincode:</label> -->
+        <input rows="1" cols="50" id="pincode"   placeholder="enter pincode"  required /><br>
+
+        <!-- <label for="gender">Gender:</label> -->
+        <input id="gender" type="radio"  placeholder="enter gender" name="male" /><br>
+        <input id="gender1" type="radio"  placeholder="enter gender"  name="female"/><br>
+
+
+        <!-- <label for="state">State:</label> -->
+        <input  id="state" type="text"  placeholder="enter state" /><br>
+
+        <!-- <label for="country">Country:</label> -->
+        <input  id="country" type="text"  placeholder="enter country" /><br>
+
+    </div>
+        
+        
+        <button id="submit" class="btn btn-primary" onclick="addRows()">Submit</button><br><br>
+
+    </form>
+    
+      <table class="table rtr">
+        <thead>
+            <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>State</th>
+                    <th>Country</th>
+            </tr>
+        </thead>
+          <tbody></tbody>  
+        </table>
+        <script src="form.js"></script>
+        <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    </body>
+</html>
