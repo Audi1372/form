@@ -1,8 +1,9 @@
 *{
     margin: auto;
     padding: auto;
+    
 }
-.container{
+.form-group{
     background-color: blanchedalmond;
     padding: 20px;
     display: block;
@@ -30,4 +31,8 @@ table{
     border-collapse: collapse;
     width: 100%;
     margin-top: 15px;
+}
+tr{
+    border: 2px solid black;
+    height: 50px;
 }
