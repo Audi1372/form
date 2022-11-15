@@ -9,42 +9,49 @@
 </head>
 <body>
     <h1 id="title">form</h1>
-    <p id="description">feijrok</p>
+    <p id="description">form filling</p>
     <form id="form">
         <div class="form-group">
     
-        <input id="first-name" type="text" placeholder="firstname" required/>
+        <input id="first-name" type="text" placeholder="firstname" required/><br><br>
+        <input  id="last-name"  type="text" placeholder="last name" required /><br><br>
+        <textarea   rows="1" cols="50" id="address"  placeholder="address" ></textarea><br><br>
+        <input rows="1" cols="50" id="pincode"   placeholder="enter pincode"  required /><br><br>
+        <pn >Select gender:</pn>
+        <input id="gender" type="radio" name="gender"  value="male"/>
+        <label for="male">Male</label>
+        <input id="gender1" type="radio" name="gender" value="female"/>
+        <label for="male">Female</label><br><br>
+        <input  id="state" type="text"  placeholder="enter state" /><br><br>
+        <input  id="country" type="text"  placeholder="enter country" /><br><br>
+        <p>Choose the food you like</p>
+        <select id="mySelect" size="5">
+            <option>Idle</option>
+            <option>Dosa</option>
+            <option>chapati</option>
+            <option>Rice</option>
+            <option>Vada</option>
+        </select>
+        <p>Click the button to allow multiple selection (meaning that you can select more than one option in the drop-down list).</p>
 
-        <!-- <label for="first-name">Firstname:</label> -->
+<button type="button" onclick="myFunction()">Try it</button>
 
-        <!-- <label for="last-name">Lastname:</label> -->
-        <input  id="last-name"  type="text" placeholder="last name" required /><br>
+<p><b>Tip:</b> Hold Ctrl or Shift to select more than one option.</p>
 
-        <!-- <label for="address">Address:</label> -->
-        <textarea   rows="1" cols="50" id="address"  placeholder="address" ></textarea><br>
+<p id="demo"></p>
+<p id="demo1"></p>
 
-        <!-- <label for="pincode">Pincode:</label> -->
-        <input rows="1" cols="50" id="pincode"   placeholder="enter pincode"  required /><br>
-
-        <!-- <label for="gender">Gender:</label> -->
-        <input id="gender" type="radio"  placeholder="enter gender" name="male" /><br>
-        <input id="gender1" type="radio"  placeholder="enter gender"  name="female"/><br>
-
-
-        <!-- <label for="state">State:</label> -->
-        <input  id="state" type="text"  placeholder="enter state" /><br>
-
-        <!-- <label for="country">Country:</label> -->
-        <input  id="country" type="text"  placeholder="enter country" /><br>
 
     </div>
         
-        
-        <button id="submit" class="btn btn-primary" onclick="addRows()">Submit</button><br><br>
+    <button type="button" onclick="displayRadioValue()">
+        Submit
+    </button>
+        <button id="submit" class="btn btn-primary" >Submit</button><br><br>
 
     </form>
     
-      <table class="table rtr">
+      <table class="table tb">
         <thead>
             <tr>
                     <th>Firstname</th>
@@ -54,9 +61,10 @@
                     <th>Gender</th>
                     <th>State</th>
                     <th>Country</th>
+                    <th>FavouriteFood</th>
             </tr>
         </thead>
-          <tbody></tbody>  
+          <tbody id="myTable"></tbody>  
         </table>
         <script src="form.js"></script>
         <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
