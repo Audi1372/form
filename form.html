@@ -25,28 +25,25 @@
         <input  id="state" type="text"  placeholder="enter state" /><br><br>
         <input  id="country" type="text"  placeholder="enter country" /><br><br>
         <p>Choose the food you like</p>
-        <select id="mySelect" size="5">
-            <option>Idle</option>
-            <option>Dosa</option>
-            <option>chapati</option>
-            <option>Rice</option>
-            <option>Vada</option>
-        </select>
-        <p>Click the button to allow multiple selection (meaning that you can select more than one option in the drop-down list).</p>
-
-<button type="button" onclick="myFunction()">Try it</button>
-
-<p><b>Tip:</b> Hold Ctrl or Shift to select more than one option.</p>
-
+        <div class="checkbox">
+            <input type="checkbox" class="checkbox" value="idile" id="idile">
+            <label for>idile</label>
+            <input type="checkbox" class="checkbox" value="vada" id="vada">
+            <label for>vada</label>
+            <input type="checkbox" class="checkbox" value="dosa" id="dosa">
+            <label for>dosa</label>
+            <input type="checkbox" class="checkbox" value="pongali" id="pongali">
+            <label for>pongali</label>
+            <input type="checkbox" class="checkbox" value="bajji" id="bajji">
+            <label for>bajji</label>
+        </div> 
 <p id="demo"></p>
 <p id="demo1"></p>
 
 
     </div>
         
-    <button type="button" onclick="displayRadioValue()">
-        Submit
-    </button>
+    
         <button id="submit" class="btn btn-primary" >Submit</button><br><br>
 
     </form>
